@@ -1,0 +1,58 @@
+{
+  "title1": "Quelle est votre langue préférée ?",
+  "subtitle1": "Choisissez la langue",
+
+  "title2": "Avec quel genre vous identifiez-vous?",
+  "subtitle2": "Veuillez indiquer comment vous vous identifiez",
+  "genderFemale": "Femme",
+  "genderMale": "Homme",
+  "genderOther": "Autre",
+
+  "title3": "Quel est votre âge?",
+  "years1": "18-29 ans",
+  "years2": "30-39 ans",
+  "years3": "40-49 ans",
+  "years4": "50+",
+
+  "title4": "Qu'est-ce que vous détestez le plus dans un livre?",
+  "hate1": "Manque de logique",
+  "hate2": "Lenteur",
+  "hate3": "Manque d'humour",
+  "hate4": "Fin beaucoup trop générique",
+
+  "title5": "Quels sont vos sujets préférés?",
+  "subtitle5": "Choisissez jusqu'à 3 sujets que vous aimez",
+  "optionWerewolf": "Loup-garou",
+  "optionAction": "Action",
+  "optionRoyalObsession": "Obsession royale",
+  "optionBillionaire": "Milliardaire",
+  "optionRomance": "Romance",
+  "optionYoungAdult": "Jeune adulte",
+  "optionBadBoy": "Mauvais garçon",
+  "someTopicsDisabled": "Certaines catégories désactivées en fonction des réponses précédentes",
+
+  "subtitleLoading": "Recherche de collections pour vous...",
+  "email": "Courriel",
+  "emailTitle": "Entrez votre e-mail pour obtenir un accès complet",
+  "inputLabel": "Votre e-mail",
+  "termsLabel1": "En continuant, j'accepte les",
+  "termsLabel2": "Politique de confidentialité",
+  "termsLabel3": "et les",
+  "termsLabel4": "Conditions d'utilisation.",
+  "invalidEmail": "Courriel invalide",
+
+  "thankYou": "Merci",
+  "quizThank": "de nous soutenir et de passer le quiz",
+  "download": "Télécharger mes réponses",
+  "retakeQuiz": "Refaire le quiz",
+  "next": "Suivant",
+
+  "order": "Ordre",
+  "title": "Titre",
+  "type": "Type",
+  "answer": "Réponse",
+  "singleSelect": "sélection-unique",
+  "singleSelectImg": "sélection-unique-image",
+  "multipleSelect": "sélection-multiple",
+  "bubble": "bulle"
+}

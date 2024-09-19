@@ -1,0 +1,63 @@
+{
+  "title1": "What is your preferred language?",
+  "subtitle1": "Choose language",
+
+  "title2": "What gender do you identify with?",
+  "subtitle2": "Please share how do you identify yourself",
+  "genderFemale": "Female",
+  "genderMale": "Male",
+  "genderOther": "Other",
+
+  "title3": "What is your age?",
+  "years1": "18-29 years",
+  "years2": "30-39 years",
+  "years3": "40-49 years",
+  "years4": "50+",
+
+  "title4": "What do you hate the most in a book?",
+  "hate1": "Lack of logic",
+  "hate2": "A slow speed",
+  "hate3": "Lack of humor",
+  "hate4": "Way too generic ending",
+
+  "title5": "What are your favorite topics?",
+  "subtitle5": "Choose up to 3 topics you like",
+  "optionWerewolf": "Werewolf",
+  "optionAction": "Action",
+  "optionRoyalObsession": "Royal Obsession",
+  "optionBillionaire": "Billionaire",
+  "optionRomance": "Romance",
+  "optionYoungAdult": "Young Adult",
+  "optionBadBoy": "Bad Boy",
+  "someTopicsDisabled": "Some categories disabled based on previous answers",
+
+  "subtitleLoading": "Finding collections for you...",
+  "email": "Email",
+  "emailTitle": "Enter your email to get full access",
+  "inputLabel": "Your email",
+  "termsLabel1": "By continuing I agree with",
+  "termsLabel2": "Privacy policy",
+  "termsLabel3": "and",
+  "termsLabel4": "Terms of use.",
+  "invalidEmail": "invalid Email",
+
+  "thankYou": "Thank you",
+  "quizThank": "for supporting us and passing quiz",
+  "download": "Download my answers",
+  "retakeQuiz": "Retake quiz",
+  "next": "Next",
+
+  "order": "Order",
+  "title": "Title",
+  "type": "Type",
+  "answer": "Answer",
+
+  "singleSelect": "single-select",
+  "singleSelectImg": "single-select-image",
+  "multipleSelect": "multiple-select",
+  "bubble": "bubble",
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇬🇧 English} fr {🇫🇷 Français} es {🇪🇸 Español} other {Unknown}}"
+  }
+}
