@@ -3,11 +3,13 @@
 import { STEPS } from "@/constants";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
+import React, { useEffect, useState } from "react";
 
 const Steps: React.FC = () => {
   const pathname = usePathname();
   const router = useRouter();
   const [locale] = pathname.split("/").filter(Boolean);
+  const [progressPercentage, setProgressPercentage] = useState(0);
 
   const localizedSteps = STEPS.map((step) => ({
     ...step,
@@ -17,8 +19,12 @@ const Steps: React.FC = () => {
   const currentStepIndex = localizedSteps.findIndex(
     (step) => step.url === pathname
   );
-  const progressPercentage =
-    ((currentStepIndex + 1) / localizedSteps.length) * 100;
+
+  useEffect(() => {
+    const newProgressPercentage =
+      ((currentStepIndex + 1) / localizedSteps.length) * 100;
+    setProgressPercentage(newProgressPercentage);
+  }, [currentStepIndex, localizedSteps.length]);
 
   // Handler for the back button
   const handleBackClick = () => {
