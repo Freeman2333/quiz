@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { AppProvider } from "@/components/AppProvider";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -38,9 +39,11 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NextIntlClientProvider messages={messages}>
-          <div className="container mx-auto p-6">{children}</div>
-        </NextIntlClientProvider>
+        <AppProvider>
+          <NextIntlClientProvider messages={messages}>
+            <div className="container mx-auto p-6">{children}</div>
+          </NextIntlClientProvider>
+        </AppProvider>
       </body>
     </html>
   );
