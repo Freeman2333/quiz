@@ -54,5 +54,9 @@
   "singleSelect": "einzelauswahl",
   "singleSelectImg": "einzelauswahl-bild",
   "multipleSelect": "mehrfachauswahl",
-  "bubble": "Blase"
+  "bubble": "Blase",
+  "LocaleSwitcher": {
+    "label": "Sprache ändern",
+    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇬🇧 Englisch} fr {🇫🇷 Französisch} es {🇪🇸 Spanisch} other {Unbekannt}}"
+  }
 }

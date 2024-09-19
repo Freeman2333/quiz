@@ -58,6 +58,6 @@
   "bubble": "bubble",
   "LocaleSwitcher": {
     "label": "Change language",
-    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇬🇧 English} fr {🇫🇷 Français} es {🇪🇸 Español} other {Unknown}}"
+    "locale": "{locale, select, de {🇩🇪 German} en {🇬🇧 English} fr {🇫🇷 French} es {🇪🇸 Spanish} other {Unknown}}"
   }
 }

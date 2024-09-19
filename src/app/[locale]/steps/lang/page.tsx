@@ -1,33 +1,42 @@
 "use client";
 
-import React, { useState } from "react";
-import { useTranslations } from "next-intl";
+import React from "react";
+import { useTranslations, useLocale } from "next-intl";
+import { useRouter, usePathname } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import Panel from "@/components/Panel";
+import { STEPS } from "@/constants"; // Adjust the import path if needed
 
 const Page: React.FC = () => {
   const t = useTranslations("LocaleSwitcher");
-  const [selectedLang, setSelectedLang] = useState<string>("");
-  console.log({ selectedLang });
+  const currentLocale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
 
-  const handleLocaleChange = (locale: string) => {
-    setSelectedLang(locale);
+  const handlePanelChange = (locale: string) => {
+    const currentStepIndex = STEPS.findIndex(
+      (step) => step.url.replace("{locale}", currentLocale) === pathname
+    );
+
+    // Get the next step index
+    const nextStepIndex = currentStepIndex + 1;
+
+    // Check if there's a next step
+    if (nextStepIndex < STEPS.length) {
+      const nextStep = STEPS[nextStepIndex].url.replace("{locale}", locale);
+      router.replace(nextStep);
+    }
   };
 
   return (
     <div className="flex flex-col gap-4">
-      {routing.locales.map((cur: string) => (
-        <div
-          key={cur}
-          className={`w-full h-15 flex items-center pl-4 rounded-lg bg-secondary transition-colors duration-300 cursor-pointer ${
-            selectedLang === cur ? "bg-primary" : ""
-          } hover:bg-primary`}
-          style={{ height: "60px" }}
-          onClick={() => handleLocaleChange(cur)}
-        >
-          <span className="text-white font-semibold">
-            {t("locale", { locale: cur })}
-          </span>
-        </div>
+      {routing.locales.map((locale: string) => (
+        <Panel
+          key={locale}
+          label={t("locale", { locale })}
+          isSelected={currentLocale === locale}
+          onClick={() => handlePanelChange(locale)}
+        />
       ))}
     </div>
   );

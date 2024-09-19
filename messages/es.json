@@ -54,5 +54,9 @@
   "singleSelect": "selección-única",
   "singleSelectImg": "selección-única-imagen",
   "multipleSelect": "selección-múltiple",
-  "bubble": "burbuja"
+  "bubble": "burbuja",
+  "LocaleSwitcher": {
+    "label": "Cambiar idioma",
+    "locale": "{locale, select, de {🇩🇪 Alemán} en {🇬🇧 Inglés} fr {🇫🇷 Francés} es {🇪🇸 Español} other {Desconocido}}"
+  }
 }
