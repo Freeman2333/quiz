@@ -20,7 +20,7 @@ const Page: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col gap-4">
+    <>
       <h1 className="text-3xl font-bold text-center text-foreground mb-5">
         {t("title4")}
       </h1>
@@ -35,7 +35,7 @@ const Page: React.FC = () => {
         ))}
       </div>
       <Button onClick={goToNextStep}>{t("next")}</Button>
-    </div>
+    </>
   );
 };
 

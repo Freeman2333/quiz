@@ -15,7 +15,7 @@ const Page: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col gap-4 w-full">
+    <>
       <h1 className="text-3xl font-bold text-center text-foreground">
         {t("title2")}
       </h1>
@@ -52,7 +52,7 @@ const Page: React.FC = () => {
           </p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
