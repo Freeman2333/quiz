@@ -6,7 +6,6 @@ import { useRouter, usePathname } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Panel from "@/components/Panel";
 import { STEPS } from "@/constants";
-import { useAppContext } from "@/components/AppProvider";
 
 const Page: React.FC = () => {
   const tRoot = useTranslations();
@@ -14,7 +13,6 @@ const Page: React.FC = () => {
   const currentLocale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
-  const { setLanguage } = useAppContext()!;
 
   const handlePanelChange = (locale: string) => {
     const currentStepIndex = STEPS.findIndex(
@@ -27,8 +25,6 @@ const Page: React.FC = () => {
       const nextStep = STEPS[nextStepIndex].url.replace("{locale}", locale);
       router.replace(nextStep);
     }
-
-    setLanguage(locale);
   };
 
   return (

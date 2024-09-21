@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { useAppContext } from "@/components/AppProvider";
 import { useTranslations } from "next-intl";
 import { useStepNavigation } from "@/hook/useStepNavigation";
