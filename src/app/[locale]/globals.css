@@ -6,7 +6,9 @@
   --background: #1f002b;
   --foreground: #fff;
   --secondary: #36173d;
+  --secondary-light: #6a2a59;
   --primary: #e4229c;
+  --primary-light: #932468;
 }
 
 body {

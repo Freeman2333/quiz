@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { useTranslations } from "next-intl";
 import { useAppContext } from "@/components/AppProvider";
 import Panel from "@/components/Panel";

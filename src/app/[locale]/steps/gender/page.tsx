@@ -46,7 +46,7 @@ const Page: React.FC = () => {
           onClick={() => handleGenderSelect(t("genderOther"))}
           className={`flex-1 h-48 flex items-center justify-start pl-8 rounded-lg bg-secondary transition-colors duration-300 cursor-pointer hover:bg-primary`}
         >
-          <span className="text-6xl">🧑</span>
+          <span className="text-6xl">😉</span>
           <p className="text-2xl text-white font-semibold ml-6">
             {t("genderOther")}
           </p>
