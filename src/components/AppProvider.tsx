@@ -1,27 +1,39 @@
 "use client";
-import { createContext, useContext } from "react";
+
+import React, { createContext, useContext, useState } from "react";
 
 type AppContextType = {
-  language: string;
   gender: string;
   age: number;
   hate: string[];
   favoriteTopics: string[];
+  setGender: (gender: string) => void;
+  setAge: (age: number) => void;
+  setHate: (hate: string[]) => void;
+  setFavoriteTopics: (topics: string[]) => void;
 };
 
-const defaultAppContext: AppContextType = {
-  language: "en",
-  gender: "unspecified",
-  age: 0,
-  hate: [],
-  favoriteTopics: [],
-};
-
-const AppContext = createContext<AppContextType>(defaultAppContext);
+const AppContext = createContext<AppContextType | null>(null);
 
 export const AppProvider = ({ children }: { children: React.ReactNode }) => {
+  const [gender, setGender] = useState("male");
+  const [age, setAge] = useState(0);
+  const [hate, setHate] = useState<string[]>([]);
+  const [favoriteTopics, setFavoriteTopics] = useState<string[]>([]);
+
   return (
-    <AppContext.Provider value={defaultAppContext}>
+    <AppContext.Provider
+      value={{
+        gender,
+        age,
+        hate,
+        favoriteTopics,
+        setGender,
+        setAge,
+        setHate,
+        setFavoriteTopics,
+      }}
+    >
       {children}
     </AppContext.Provider>
   );
