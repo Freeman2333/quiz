@@ -34,7 +34,9 @@ const Page: React.FC = () => {
           />
         ))}
       </div>
-      <Button onClick={goToNextStep}>{t("next")}</Button>
+      <Button onClick={goToNextStep} disabled={hate.length === 0}>
+        {t("next")}
+      </Button>
     </>
   );
 };

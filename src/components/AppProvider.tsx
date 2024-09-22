@@ -20,7 +20,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
   const [age, setAge] = useState("");
   const [hate, setHate] = useState<string[]>([]);
   const [favoriteTopics, setFavoriteTopics] = useState<string[]>([]);
-  // console.log({ gender, age, hate });
+  // console.log({ gender, age, hate, favoriteTopics });
 
   return (
     <AppContext.Provider
