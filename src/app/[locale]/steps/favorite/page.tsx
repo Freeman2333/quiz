@@ -31,7 +31,7 @@ const Page: React.FC = () => {
           <div
             key={key}
             onClick={() => handleToggle(key)}
-            className={`w-24 h-24 flex items-center justify-center rounded-full border-2 cursor-pointer transition-colors duration-300 ${
+            className={`w-24 h-24 flex items-center justify-center rounded-full border-2 hover:bg-secondaryLight hover:border-primary cursor-pointer transition-colors duration-300 ${
               favoriteTopics.includes(key)
                 ? "bg-secondaryLight border-primary"
                 : "bg-secondary border-transparent"

@@ -1,9 +1,11 @@
 "use client";
 
-import { STEPS } from "@/constants";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+
+import { STEPS } from "@/constants";
+import Icons from "@/icons";
 
 const Steps: React.FC = () => {
   const pathname = usePathname();
@@ -39,27 +41,12 @@ const Steps: React.FC = () => {
   return (
     <div className="relative w-full mb-20">
       <div className="flex justify-center mb-2 text-sm font-medium relative">
-        {/* Show back button only if it's not the first step */}
         {currentStepIndex > 0 && (
           <button
             onClick={handleBackClick}
             className="absolute left-0 flex items-center p-2 bg-transparent border-none focus:outline-none"
           >
-            {/* Inline SVG for Chevron Left */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-foreground mr-2"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
+            {Icons.ChevronLeft}
           </button>
         )}
 
