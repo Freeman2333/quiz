@@ -41,7 +41,7 @@ export default async function RootLayout({
       >
         <AppProvider>
           <NextIntlClientProvider messages={messages}>
-            <div className="container mx-auto p-6 max-w-screen-lg">
+            <div className="container mx-auto p-6 max-w-screen-lg h-full">
               {children}
             </div>
           </NextIntlClientProvider>

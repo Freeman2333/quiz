@@ -5,12 +5,13 @@ import Button from "@/components/Button";
 import { useTranslations } from "next-intl";
 import React from "react";
 import { topics } from "./constants";
-import { useRouter } from "next/navigation";
+import { useNavigateToUrl } from "@/hook/useAppNavigation";
 
 const Page: React.FC = () => {
   const t = useTranslations();
-  const router = useRouter();
   const { favoriteTopics, setFavoriteTopics } = useAppContext()!;
+
+  const handleNext = useNavigateToUrl();
 
   const handleToggle: (topic: string) => void = (topic) => {
     const updatedTopics = favoriteTopics.includes(topic)
@@ -41,7 +42,7 @@ const Page: React.FC = () => {
           </div>
         ))}
       </div>
-      <Button width="100%" onClick={() => router.push("/progress")}>
+      <Button width="100%" onClick={() => handleNext(`/progress`)}>
         {t("next")}
       </Button>
     </div>

@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useAppContext } from "@/components/AppProvider";
-import { useStepNavigation } from "@/hook/useStepNavigation";
+import { useStepNavigation } from "@/hook/useAppNavigation";
 import CheckboxPanel from "@/components/CheckboxPanel";
 import Button from "@/components/Button";
 

@@ -2,7 +2,7 @@
 
 import { useAppContext } from "@/components/AppProvider";
 import { useTranslations } from "next-intl";
-import { useStepNavigation } from "@/hook/useStepNavigation";
+import { useStepNavigation } from "@/hook/useAppNavigation";
 
 const Page: React.FC = () => {
   const t = useTranslations();

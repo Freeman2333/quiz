@@ -1,3 +1,5 @@
+"use client";
+
 import { useRouter, usePathname } from "next/navigation";
 import { STEPS } from "@/constants";
 import { useLocale } from "next-intl";
@@ -24,4 +26,16 @@ export const useStepNavigation = () => {
   };
 
   return { goToNextStep };
+};
+
+export const useNavigateToUrl = () => {
+  const router = useRouter();
+  const currentLocale = useLocale();
+
+  const handleNext = (url: string) => {
+    const nextPageWithLocale = `/${currentLocale}${url}`;
+    router.push(nextPageWithLocale);
+  };
+
+  return handleNext;
 };

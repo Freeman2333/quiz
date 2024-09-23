@@ -25,6 +25,36 @@ const Icons = {
       />
     </svg>
   ),
+  ProgressCircle: ({ progress }: { progress: number }) => (
+    <svg
+      className="w-full h-full transform rotate-[-90deg]"
+      viewBox="0 0 130 130"
+    >
+      <circle
+        cx="65"
+        cy="65"
+        r="60"
+        stroke="currentColor"
+        strokeWidth="7"
+        className="text-foreground"
+        fill="none"
+      />
+      <circle
+        cx="65"
+        cy="65"
+        r="60"
+        stroke="currentColor"
+        strokeWidth="7"
+        className="text-primary transition-all duration-300"
+        fill="none"
+        strokeDasharray="377"
+        strokeDashoffset={377 - (377 * progress) / 100}
+        style={{
+          transition: "stroke-dashoffset 0.5s ease-out, stroke 0.5s ease-out",
+        }}
+      />
+    </svg>
+  ),
 };
 
 export default Icons;

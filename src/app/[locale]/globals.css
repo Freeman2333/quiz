@@ -11,6 +11,11 @@
   --primary-light: #932468;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
