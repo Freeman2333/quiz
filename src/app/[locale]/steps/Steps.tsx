@@ -46,7 +46,7 @@ const Steps: React.FC = () => {
             onClick={handleBackClick}
             className="absolute left-0 flex items-center p-2 bg-transparent border-none focus:outline-none"
           >
-            {Icons.ChevronLeft}
+            <Icons.ChevronLeft />
           </button>
         )}
 
