@@ -1,9 +1,9 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 import { useAppContext } from "@/components/AppProvider";
 import Button from "@/components/Button";
-import { useTranslations } from "next-intl";
-import React from "react";
 import { topics } from "./constants";
 import { useNavigateToUrl } from "@/hook/useAppNavigation";
 
