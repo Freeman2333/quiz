@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import ProgressCircle from "./ProgressCircle";
 import { useNavigateToUrl } from "@/hook/useAppNavigation";
 
-const Progress = () => {
+const Progress: React.FC = () => {
   const t = useTranslations();
   const handleNext = useNavigateToUrl();
 

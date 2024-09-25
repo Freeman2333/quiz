@@ -56,6 +56,7 @@
   "singleSelectImg": "single-select-image",
   "multipleSelect": "multiple-select",
   "bubble": "bubble",
+
   "LocaleSwitcher": {
     "label": "Change language",
     "locale": "{locale, select, de {🇩🇪 German} en {🇬🇧 English} fr {🇫🇷 French} es {🇪🇸 Spanish} other {Unknown}}"

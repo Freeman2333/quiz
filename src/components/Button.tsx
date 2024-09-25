@@ -17,7 +17,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={`mt-4 p-3 bg-primary text-white rounded-2xl transition-colors duration-300 ${
+      className={`mt-4 p-3 bg-primary text-white rounded-2xl transition-colors duration-300 font-bold ${
         disabled ? "opacity-50 cursor-not-allowed" : ""
       } ${className}`}
       onClick={onClick}

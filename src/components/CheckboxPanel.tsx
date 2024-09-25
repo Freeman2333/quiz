@@ -37,7 +37,7 @@ const CheckboxPanel: React.FC<CheckboxPanelProps> = ({
                 : "bg-secondary text-primary border-primary"
             }`}
           >
-            {isChecked && Icons.CheckMark}
+            {isChecked && <Icons.CheckMark />}
           </div>
         </div>
       </div>
