@@ -1,4 +1,4 @@
-const Icons: { [key: string]: React.FC<{ progress: number }> } = {
+const Icons: { [key: string]: React.FC<{ progress?: number }> } = {
   ChevronLeft: () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ const Icons: { [key: string]: React.FC<{ progress: number }> } = {
       />
     </svg>
   ),
-  ProgressCircle: ({ progress = 0 }: { progress: number }) => (
+  ProgressCircle: ({ progress = 0 }: { progress?: number }) => (
     <svg
       className="w-full h-full transform rotate-[-90deg]"
       viewBox="0 0 130 130"
