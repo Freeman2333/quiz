@@ -1,4 +1,4 @@
-const Icons: { [key: string]: React.FC<any> } = {
+const Icons: { [key: string]: React.FC<{ progress: number }> } = {
   ChevronLeft: () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ const Icons: { [key: string]: React.FC<any> } = {
       />
     </svg>
   ),
-  ProgressCircle: ({ progress }: { progress: number }) => (
+  ProgressCircle: ({ progress = 0 }: { progress: number }) => (
     <svg
       className="w-full h-full transform rotate-[-90deg]"
       viewBox="0 0 130 130"
@@ -70,7 +70,7 @@ const Icons: { [key: string]: React.FC<any> } = {
       <polyline points="20 6 9 17 4 12" />
     </svg>
   ),
-  DownloadIcon: (props: React.SVGProps<SVGSVGElement>) => (
+  DownloadIcon: () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -81,7 +81,6 @@ const Icons: { [key: string]: React.FC<any> } = {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      {...props}
     >
       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
       <polyline points="7 10 12 15 17 10" />
