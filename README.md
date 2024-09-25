@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Quizz App
 
-## Getting Started
+This is a quiz application that I developed as part of a coding challenge I found on [DOU](https://dou.ua/lenta/articles/front-end-test-tasks-examples/?from=tg&utm_source=telegram&utm_medium=social). The app allows users to participate in a quiz, review their answers, and download their results in a CSV format.
 
-First, run the development server:
+You can view the live version of the app here: [quiz-two-kohl.vercel.app](https://quiz-two-kohl.vercel.app).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Internationalization**: Multi-language support implemented with `next-intl`.
+- **Responsive Design**: Fully responsive UI using `Tailwind CSS`.
+- **CSV Download**: Users can download their quiz results in CSV format.
+- **Accessible UI**: The UI is designed with accessibility in mind.
+- **Modern UI Components**: Built with reusable, functional components using React and TypeScript.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The project is built using the following technologies:
 
-## Learn More
+- **Framework**: [Next.js](https://nextjs.org) 14.2.12
+- **UI**: [React](https://reactjs.org) 18
+- **Styling**: [Tailwind CSS](https://tailwindcss.com) 3.4.1
+- **Internationalization**: [next-intl](https://github.com/amannn/next-intl) 3.19.3
+- **TypeScript**: Strongly typed components and pages using TypeScript 5
+- **Deployment**: Hosted on [Vercel](https://vercel.com)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Usage
+Users can navigate through the quiz, answer questions, and submit the form.
+After submitting, users can review their answers and download them as a CSV file.
+The app supports multiple languages, which can be toggled via the UI.
+Deployment
+The application is deployed using Vercel for seamless integration with Next.js. To deploy your own version, follow these steps:
